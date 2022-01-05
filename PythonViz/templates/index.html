@@ -74,20 +74,22 @@ div {
 </head>
 <body background= "blue.jpg" >
 <p>{{res}}</p>
-<form action="/ma-page-de-traitement" method="post">
+<form action="/" method="post">
         <label for="model-select"> Choose a model: </label> 
         <select name="model" id="model-select">
-            <option value="boosting">Boosting</option>
-            <option value="bagging">Bagging</option>
             <option value="extratree">Extra Tree</option>
-            <option value="gscv">GridSearchCV</option>
+            <option value="bagging">Bagging</option>
+            <option value="gscv">GridSearchCv-1 parameter</option>
+            <option value="gscv">GridSearchCv-2 parameters</option>
             <option value="randfor">Random Forest</option>
+            <option value="randfor">Adaboost</option>
+            <option value="randfor">Knn</option>
             <option value="gradboost">Gradient Boosting</option>
         </select>
         <div></div>
         <div>
             <label for="name">Gender :</label>
-            <select name="gender" id="gender-select">
+            <select name="gender-select" id="gender-select">
             <option value="male">Male</option>
             <option value="female">Female</option>
             </select>
@@ -95,40 +97,40 @@ div {
         
         <div>
             <label for="age">Age :</label>
-            <input type="msg" id="age" name="user_mail">
+            <input type="msg" id="age" name="age">
         </div>
         <div>
             <label for="fhwo">family history with overweight :</label>
-            <select name="bool" id="fhwo-select">
+            <select name="fhwo-select" id="fhwo-select">
             <option value="yes">yes</option>
             <option value="no">no</option>
             </select>
         </div>
         <div>
             <label for="age">frequent consommation high caloric food :</label>
-            <select name="bool" id="caloric-select">
+            <select name="caloric-select" id="caloric-select">
             <option value="yes">yes</option>
             <option value="no">no</option>
             </select>
         </div>
         <div>
             <label for="age">frequency_cons_veg :</label>
-            <input type="msg" id="veg" name="user_mail">
+            <input type="msg" id="veg" name="veg">
         </div>
         <div>
             <label for="age">nb_main_meal :</label>
-            <input type="msg" id="meal" name="user_mail">
+            <input type="msg" id="meal" name="meal">
         </div>
         <div>
             <label for="age">cons_between_meal :</label>
-            <select name="bool" id="betw_meal-select">
+            <select name="betw_meal-select" id="betw_meal-select">
             <option value="yes">yes</option>
             <option value="no">no</option>
             </select>
         </div>
         <div>
             <label for="age">Smoke :</label>
-            <select name="bool" id="smoke-select">
+            <select name="smoke-select" id="smoke-select">
             <option value="always">Always</option>
             <option value="sometimes">Sometimes</option>
             <option value="Frequently">Frequently</option>
@@ -137,26 +139,26 @@ div {
         </div>
         <div>
             <label for="age">CH2O :</label>
-            <input type="msg" id="water" name="user_mail">
+            <input type="msg" id="water" name="water">
         </div>
         <div>
             <label for="age">Suivi calories :</label>
-            <select name="bool" id="caloric_track-select">
+            <select name="caloric_track-select" id="caloric_track-select">
             <option value="yes">yes</option>
             <option value="no">no</option>
             </select>
         </div>
         <div>
             <label for="age">frequency physical activity :</label>
-            <input type="msg" id="activity" name="user_mail">
+            <input type="msg" id="activity" name="activity">
         </div>
         <div>
             <label for="age">time_tech :</label>
-            <input type="msg" id="techno" name="user_mail">
+            <input type="msg" id="techno" name="techno">
         </div>
         <div>
             <label for="age">Consommation of alcohol :</label>
-            <select name="bool" id="alcohol-select">
+            <select name="alcohol-select" id="alcohol-select">
             <option value="always">Always</option>
             <option value="sometimes">Sometimes</option>
             <option value="Frequently">Frequently</option>
@@ -165,14 +167,15 @@ div {
         </div>
         <div>
             <label for="age">Means of transportation :</label>
-            <select name="bool" id="transport-select">
+            <select name="transport-select" id="transport-select">
             <option value="pt">Public Transportation</option>
             <option value="wk">Walking</option>
             <option value="auto">Automobile</option>
-            <option value="bike">Bike</option>
+            <option value="Motorbike">Motorbike</option>
+            <option value="Bike">Bike</option>
             </select>
         </div>
-        <input type="button" value ="Submit" style="float: right;">
+        <button type="submit" style="float: right;">envoyer </button>S
         
 </form>
 </body>
