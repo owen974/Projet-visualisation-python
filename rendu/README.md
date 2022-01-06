@@ -16,9 +16,9 @@ We will proceed by these following steps:
     - Data Visualisation
     - Obesity Level Prediction
     - API Building
-    
- TO VISUALIZE API FLASK:
-    - open Anaconda prompt
-    - go to the folder "PythonViz"
-    - execute this command : "python views.py"
+
+TO VISUALIZE API FLASK: 
+    - open Anaconda prompt 
+    - go to the folder "PythonViz" 
+    - execute this command : "python views.py" 
     - open the page with the url given
